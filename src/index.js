@@ -8,16 +8,6 @@ import allReducers from "./redux/reducers";
 import { Provider } from "react-redux";
 let myStore = createStore(allReducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-// action
-// const setExportedCampaigns = () => {
-//     return {
-//         type: 'SET_EXPORT_CAMPAIGNS'
-//     }
-// }
-
-// dispatch
-// store.dispatch(setExportedCampaigns())
-
 ReactDOM.render(<Provider store={myStore}> <App /> </Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
